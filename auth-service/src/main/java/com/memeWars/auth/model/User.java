@@ -18,7 +18,35 @@ public class User {
 
     private String username;
     private String email;
+
+    public String getAvatar() {
+        return avatar;
+    }
+
+    public void setAvatar(String avatar) {
+        this.avatar = avatar;
+    }
+
+    public String getBio() {
+        return bio;
+    }
+
+    public void setBio(String bio) {
+        this.bio = bio;
+    }
+
+    public MemeStats getMemeStats() {
+        return memeStats;
+    }
+
+    public void setMemeStats(MemeStats memeStats) {
+        this.memeStats = memeStats;
+    }
+
     private String password;
+    private String avatar; // URL or file path to avatar image
+    private String bio; // Short bio of the user
+    private MemeStats memeStats;
 
     public Set<String> getRoles() {
         return roles;
